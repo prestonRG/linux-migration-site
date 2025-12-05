@@ -1,0 +1,15 @@
+{
+  "name": "linux_help_website",
+  "version": "1.0.0",
+  "description": "A website to help user switching from their current OS to Linux.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Preston Guill",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}

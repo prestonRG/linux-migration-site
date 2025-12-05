@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOOM I & II</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>DOOM History</h1>
+    </header>
+
+    <section>
+        <h2>Key Milestones</h2>
+        <ul id="timeline">
+            <li>1993: DOOM released</li>
+            <li>1994: DOOM II released</li>
+        </ul>
+    </section>
+
+    <button onclick="showFact('idTech')">Learn About idTech</button>
+
+    <div id="factModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p id="factContent"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
