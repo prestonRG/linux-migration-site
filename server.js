@@ -1,11 +1,15 @@
 // fileName : server.js
 // Express.js
 const express = require('express');
+const path = require('path');
 const app = express();
 
-// Defining a route in Express
+// Serve static files (CSS, JS, Images)
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Serve the HTML file
 app.get('/', (req, res) => {
-    res.send('<h1>Hello, Express.js Server!</h1>');
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Specifying the port and starting the server
