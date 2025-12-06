@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Ubuntu",
+    "ease": "Easy",
+    "size": "Medium",
+    "description": "Beginner-friendly distribution with strong community support."
+  },
+  {
+    "name": "Linux Mint",
+    "ease": "Very Easy",
+    "size": "Medium",
+    "description": "Great for Windows users. Cinnamon desktop is very familiar."
+  },
+  {
+    "name": "Debian",
+    "ease": "Intermediate",
+    "size": "Medium",
+    "description": "Modern, polished, backed by Red Hat."
+  },
+  {
+    "name": "Fedora",
+    "ease": "Intermediate",
+    "size": "Medium",
+    "description": "Modern, polished, backed by Red Hat."
+  },
+  {
+    "name": "Arch",
+    "ease": "Intermediate",
+    "size": "Medium",
+    "description": "Modern, polished, backed by Red Hat."
+  },
+  {
+    "name": "Pop!_OS",
+    "ease": "Intermediate",
+    "size": "Medium",
+    "description": "Modern, polished, backed by Red Hat."
+  },
+  {
+    "name": "Manjaro",
+    "ease": "Intermediate",
+    "size": "Medium",
+    "description": "Modern, polished, backed by Red Hat."
+  },
+  {
+    "name": "CachyOS",
+    "ease": "Intermediate",
+    "size": "Medium",
+    "description": "Modern, polished, backed by Red Hat."
+  }
+]

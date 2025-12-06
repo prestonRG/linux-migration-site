@@ -35,7 +35,7 @@
             <br>
             <ol>
                 <li><strong>Back Up Your Data</strong> - Backup important files.</li>
-                <li><strong>Choose a Distribution</strong> - Click <a href="#">here</a> for help deciding.</li>
+                <li><strong>Choose a Distribution</strong> - Click <a href="distro_list.html">here</a> for help deciding.</li>
                 <li><strong>Create a Bootable USB</strong> - Download the ISO and use a tool like <a href="https://etcher.balena.io/">balenaEtcher</a> to create a bootable USB drive.</li>
                 <li><strong>Install Linux</strong> - Boot from the USB and follow the installation prompts.</li>
                 <li><strong>Explore Linux</strong> - After removing the USB from your computer and restarting, you are now using Linux!</li>
@@ -56,15 +56,15 @@
         </div>
     </footer>
 
-    <button onclick="showFact('idTech')">Learn About idTech</button>
+    <!-- Add script function -->
+    <script src="script.js"></script>
 
-    <div id="factModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <p id="factContent"></p>
-        </div>
+    <!-- Home button -->
+    <div class="home_button">
+        <a href="index.html">
+            <img src="images/home_icon.png" alt="Home Icon" width="50" height="50">
+        </a>
     </div>
 
-    <script src="script.js"></script>
 </body>
 </html>

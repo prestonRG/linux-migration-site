@@ -17,6 +17,16 @@ body {
     margin: 0 auto;
 }
 
+.questions {
+    width: 50%;
+    margin: 50px;
+}
+
+.common_issues {
+    width: 80%;
+    margin: 80px;
+}
+
 /* Header */
 header {
     background-color: #333;
@@ -111,4 +121,10 @@ footer {
 
 footer p {
     font-size: 1em;
+}
+
+.home_button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
 }
