@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linux Distributions</title>
+    <link rel="stylesheet" href="styles/distro_page.css">
+</head>
+<body>
+    <header>
+            <h1>Linux Distributions</h1>
+    </header>
+
+    <div class="filter">
+        <label for="easeFilter">Ease of use:</label>
+        <select id="easeFilter">
+            <option value="All">Any</option>
+            <option value="Easy">Easy</option>
+            <option value="Intermediate">Indermediate</option>
+            <option value="Hard">Hard</option>
+        </select>
+
+        <label for="releaseFilter">Release Model:</label>
+        <select id="releaseFilter">
+            <option value="All">Any</option>
+            <option value="Fixed">Fixed</option>
+            <option value="Rolling">Rolling</option>
+        </select>
+    </div>
+
+    <div class="list">
+        <div id="distroList"></div>
+    </div>
+
+    <footer>
+        <div class="containers">
+            <p>&copy; 2025 Switch to Linux. All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="scripts/distro_list.js"></script>
+
+    <!-- Home button -->
+    <div class="home_button">
+        <a href="index.html">
+            <img src="images/home_icon.png" alt="Home Icon" width="50" height="50">
+        </a>
+    </div>
+
+</body>
+</html>

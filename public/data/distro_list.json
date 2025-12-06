@@ -1,50 +1,57 @@
 [
-  {
-    "name": "Ubuntu",
-    "ease": "Easy",
-    "size": "Medium",
-    "description": "Beginner-friendly distribution with strong community support."
-  },
-  {
-    "name": "Linux Mint",
-    "ease": "Very Easy",
-    "size": "Medium",
-    "description": "Great for Windows users. Cinnamon desktop is very familiar."
-  },
-  {
-    "name": "Debian",
-    "ease": "Intermediate",
-    "size": "Medium",
-    "description": "Modern, polished, backed by Red Hat."
-  },
-  {
-    "name": "Fedora",
-    "ease": "Intermediate",
-    "size": "Medium",
-    "description": "Modern, polished, backed by Red Hat."
-  },
-  {
-    "name": "Arch",
-    "ease": "Intermediate",
-    "size": "Medium",
-    "description": "Modern, polished, backed by Red Hat."
-  },
-  {
-    "name": "Pop!_OS",
-    "ease": "Intermediate",
-    "size": "Medium",
-    "description": "Modern, polished, backed by Red Hat."
-  },
-  {
-    "name": "Manjaro",
-    "ease": "Intermediate",
-    "size": "Medium",
-    "description": "Modern, polished, backed by Red Hat."
-  },
-  {
-    "name": "CachyOS",
-    "ease": "Intermediate",
-    "size": "Medium",
-    "description": "Modern, polished, backed by Red Hat."
-  }
+    {
+        "name": "Debian",
+        "difficulty": "Intermediate",
+        "release_model": "Fixed",
+        "description": "A very stable distro option."
+    },
+
+    {
+        "name": "Ubuntu",
+        "difficulty": "Easy",
+        "release_model": "Fixed (LTS and regular releases)",
+        "description": "Beginner-friendly distribution with strong community support."
+    },
+
+    {
+        "name": "Linux Mint",
+        "difficulty": "Easy",
+        "release_model": "Fixed (based on Ubuntu LTS)",
+        "description": "Great for Windows users. Cinnamon desktop is very familiar."
+    },
+
+    {
+        "name": "Pop!_OS",
+        "difficulty": "Easy",
+        "release_model": "Fixed (Ubuntu-based)",
+        "description": "An option designed for productivity and gaming as it comes with many of the necessary drivers pre-installed."
+    },
+
+    {
+        "name": "Fedora",
+        "difficulty": "Intermediate",
+        "release_model": "Fixed (every ~6 months)",
+        "description": "Modern, polished, backed by Red Hat."
+    },
+
+    {
+        "name": "Arch",
+        "difficulty": "Hard",
+        "release_model": "Rolling",
+        "description": "A highly customizable, bleeding edge distro, at the cost of stability."
+    },
+
+    {
+        "name": "EndeavourOS",
+        "difficulty": "Intermediate",
+        "release_model": "Rolling (Arch-based)",
+        "description": "A friendly Arch-based distro for users who want an Arch experience without manual setup."
+    },
+
+    {
+        "name": "CachyOS",
+        "difficulty": "Intermediate",
+        "release_model": "Rolling (Arch-based)",
+        "description": "An Arch distro focused on performance to get the most out of one's system."
+    }
 ]

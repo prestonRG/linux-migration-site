@@ -1,40 +1,49 @@
+// Load JSON data.
 let distros = [];
 
-fetch("data/distro_list.json")
-  .then(response => response.json())
-  .then(data => {
-    distros = data;
-    display(distros);
-  });
+// Convert distro_list.json into JavaScript, store it in "data", then display it.
+fetch("../data/distro_list.json")
+    .then(response => response.json())
+    .then(data => {
+        distros = data;
+        displayDistros(distros);
+        console.log("Data Loaded", data);
+    })
+    .catch(error => console.error("Error loading JSON", error));
 
-function display(list) {
-  const container = document.getElementById("distroList");
-  container.innerHTML = "";
+// Show the list of distros.
+function displayDistros(list) {
+    const container = document.getElementById("distroList");
+    container.innerHTML = "";
 
-  list.forEach(distro => {
-    const card = `
-      <div class="card">
-        <h2>${distro.name}</h2>
-        <p>${distro.description}</p>
-        <p><strong>Ease:</strong> ${distro.ease}</p>
-        <p><strong>Size:</strong> ${distro.size}</p>
-      </div>
-    `;
-    container.innerHTML += card;
-  });
+    list.forEach(distro => {
+        const rowEntry = `
+            <div class="card">
+                <ul>
+                    <li>
+                        <h2>${distro.name}</h2>
+                    </li>
+                </ul>
+                <p>${distro.description}</p>
+                <p><strong>Difficulty:</strong>${distro.difficulty}</p>
+                <p><strong>Release Model:</strong>${distro.release_model}</p>
+            </div>
+        `;
+        container.innerHTML += rowEntry;
+    })
 }
 
 document.getElementById("easeFilter").addEventListener("change", filter);
-document.getElementById("sizeFilter").addEventListener("change", filter);
+document.getElementById("releaseFilter").addEventListener("change", filter);
 
 function filter() {
-  const ease = document.getElementById("easeFilter").value;
-  const size = document.getElementById("sizeFilter").value;
+    const ease = document.getElementById("easeFilter").value;
+    const release = document.getElementById("releaseFilter").value;
 
-  const filtered = distros.filter(d =>
-    (ease === "" || d.ease === ease) &&
-    (size === "" || d.size === size)
-  );
+    const filtered = distros.filter(d =>
+        (ease === "All" || d.difficulty.includes(ease)) &&
+        (release === "All" || d.release_model.includes(release))
+    );
 
-  display(filtered);
+    displayDistros(filtered);
 }

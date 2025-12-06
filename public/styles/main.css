@@ -13,18 +13,8 @@ body {
 }
 
 .container {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-}
-
-.questions {
-    width: 50%;
-    margin: 50px;
-}
-
-.common_issues {
-    width: 80%;
-    margin: 80px;
 }
 
 /* Header */
