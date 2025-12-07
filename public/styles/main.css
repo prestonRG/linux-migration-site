@@ -69,6 +69,10 @@ header p {
     margin-bottom: 1em;
 }
 
+.steps h3 {
+    text-align: center;
+}
+
 .steps ol {
     list-style-type: decimal;
     padding-left: 20px;
