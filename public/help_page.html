@@ -1,3 +1,5 @@
+<!-- Collapsible list code and css sourced from https://www.w3schools.com/howto/howto_js_collapsible.asp -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,6 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Switching to Linux</title>
     <link rel="stylesheet" href="styles/help_page.css">
+    <style>
+        /* Style the button that is used to open and close the collapsible content */
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+
+        /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+
+        /* Style the collapsible content. Note: hidden by default */
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -13,22 +42,45 @@
         </div>
     </header>
 
-    <div class="questions">
-        <ul id="common_issues">
-            <p><strong>What is a Linux Distribution?</strong></p>
-            <p>A Linux distribution, or distro as it is commonly called, is simply a version of Linux that can be installed.
-                Different distributions can cater to a users specific needs, but it is all Linux under the hood.</p>
+    <!-- Updated page with collapsible entries instead of showing both the questions and answers at the same time.
+     As more entries are added, it will make the page much easier for users to navigate. -->
 
-            <p><strong>What is a bootable USB?</strong></p>
-            <p>A bootable USB is any USB drive that can boot an operating system. If you have ever manually installed Windows, you may
-                remember that it was done by inserting a USB drive into your computer. Linus is no different, but these drives must be
-                created by the user as they are not sold.</p>
-                
-            <p><strong>Is this safe?</strong></p>
-            <p>The only real risk is losing your data if you do not properly create a backup. You can always return to your previous OS
-                if you later decide that Linux is not for you.</p>
-        </ul>
+    <button type="button" class="collapsible"><strong>What is a Linux Distribution?</strong></button>
+    <div class="content">
+        <p>A Linux distribution, or distro as it is commonly called, is simply a version of Linux that can be installed.
+            Different distributions can cater to a users specific needs, but it is all Linux under the hood.</p>
     </div>
+    <button type="button" class="collapsible"><strong>What is a bootable USB?</strong></button>
+    <div class="content">
+        <p>A bootable USB is any USB drive that can boot an operating system. If you have ever manually installed Windows, you may
+            remember that it was done by inserting a USB drive into your computer. Linus is no different, but these drives must be
+            created by the user as they are not sold.</p>
+    </div>
+    <button type="button" class="collapsible"><strong>Is this safe?</strong></button>
+    <div class="content">
+        <p>The only real risk is losing your data if you do not properly create a backup. You can always return to your previous OS
+            if you later decide that Linux is not for you.</p>
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                    } 
+
+                else {
+                content.style.display = "block";
+                }
+            });
+        }
+    </script>
 
     <footer>
         <div class="containers">
@@ -39,7 +91,7 @@
     <!-- Add script function -->
     <script src="script.js"></script>
 
-    <!-- Home button -->
+    <!-- Home button that appears at the top left of each page. -->
     <div class="home_button">
         <a href="index.html">
             <img src="images/home_icon.png" alt="Home Icon" width="50" height="50">

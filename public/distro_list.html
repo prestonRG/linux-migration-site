@@ -12,6 +12,7 @@
             <p>Use the filters below to see what distro might be a good fit for you</p>
     </header>
 
+    <!-- Distro filter buttons -->
     <div class="filter">
         <label for="easeFilter">Ease of use:</label>
         <select id="easeFilter">
@@ -29,6 +30,7 @@
         </select>
     </div>
 
+    <!-- Display the disro list. distroList comes comes from distro_list.js and is a dynamic JSON list. -->
     <div class="list">
         <div id="distroList"></div>
     </div>
@@ -41,7 +43,7 @@
 
     <script src="scripts/distro_list.js"></script>
 
-    <!-- Home button -->
+    <!-- Home button that appears at the top left of each page. -->
     <div class="home_button">
         <a href="index.html">
             <img src="images/home_icon.png" alt="Home Icon" width="50" height="50">
