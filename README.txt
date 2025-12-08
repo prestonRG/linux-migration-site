@@ -9,6 +9,14 @@ how that computer operates. The idea that there are other options is not necessa
 in modern devices. I belive Linux allows users to use their computer in the way they want, rather than using it in the way that a business
 has decided would be best for them.
 
+- Project features
+There are simple steps that are intended to look "too easy" as the process is honestly not that difficult. However, this is not to assume
+that users will not have issues. There is a help page, links to relevant needed resources, and my contact info if all else fails.
+The questions page is formatted like a typical FAQ page with highlighted questions and dropdown tabs to see the answers.
+There is also a distribution page that lists several distros that I have personally used and would recommend. They have descriptons and there is a
+filter function that allows users to filter between ease of use, and release style, which I believe are the two most important factors when deciding
+since other aspects of a distro can be easily changed.
+
 - Deploying to Elastic Beanstalk
 The Elastic Beanstalk environment I created was called my-app-env and gave me a few problems in setting up.
 I am on linux and had to download pipx, not pip, to successfully install awsebcli. After installing
